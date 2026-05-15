@@ -100,6 +100,14 @@ nav.scrolled{box-shadow:0 2px 28px rgba(0,212,255,.07);border-bottom-color:rgba(
 .hex-dot:nth-child(4){bottom:0;left:calc(50% - 3px);animation:dotP 3s 2.25s ease-in-out infinite}
 @keyframes dotP{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.2;transform:scale(.4)}}
 
+.profile-photo{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 18%;
+  transform:scale(1.08);
+}
+
 /* ── SECTION BASE ── */
 section{padding:6.5rem 6%;position:relative;z-index:1}
 .stag{display:inline-flex;align-items:center;gap:.6rem;font-size:.68rem;font-weight:600;letter-spacing:.2em;color:var(--cyan);text-transform:uppercase;margin-bottom:.55rem}
@@ -420,17 +428,9 @@ footer strong{color:var(--cyan)}
       <div class="hex-outer"></div>
       <div class="hex-glow"></div>
       <div class="hex-photo">
-        <div class="hex-photo-inner">
-          <div class="photo-icon">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="40" cy="30" r="16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-              <path d="M10 74c0-16.569 13.431-30 30-30s30 13.431 30 30" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <span class="photo-hint">Your Photo Here</span>
-        </div>
+      <img src="./image.png" alt="Rachel Bosco" class="profile-photo">
       </div>
-      <span class="hex-dot"></span>
+      </div>
       <span class="hex-dot"></span>
       <span class="hex-dot"></span>
       <span class="hex-dot"></span>
